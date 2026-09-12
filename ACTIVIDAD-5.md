@@ -140,7 +140,11 @@
 *= 168i+24*
 
 35) $$
+    
 \begin{array}
+
 \frac{10-7i}{1+3i}
+
 \end{array}
+
 $$
