@@ -140,12 +140,4 @@
 *= 168i+24*
 
 35)
-$$
-
-\begin{array}{1 c 1}
-
-{\frac{10-7i}{1+3i}} \\
-
-\end{array}
-
-$$
+$$\begin{array}{1 c 1}{\frac{10-7i}{1+3i}} \\end{array}$$
