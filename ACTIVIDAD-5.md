@@ -4,5 +4,5 @@
 **Resuelve las siguientes operaciones con los números complejos**
 
 25) (-7-4i)-(2+i)
+
 =(-7-4i)-2-i
-=
