@@ -141,9 +141,9 @@
 
 35) $$
     
-\begin{array}
+\begin{array}{1 c 1}
 
-\frac{10-7i}{1+3i}
+{\frac{10-7i}{1+3i} \\
 
 \end{array}
 
