@@ -1,3 +1,3 @@
 # **FUNDAMENTOS DE ÁLGEBRA**
 **Ubica los siguientes números complejos en el plano**
-![]( ./algebraprimeros. )
+![álgebra]( ./algebraprimeros.jpeg )
