@@ -141,6 +141,6 @@
 
 35) $$
 \begin{array}
-\frac{10 - 7i}{1 + 3i}
+\frac{10-7i}{1+3i}
 \end{array}
 $$
