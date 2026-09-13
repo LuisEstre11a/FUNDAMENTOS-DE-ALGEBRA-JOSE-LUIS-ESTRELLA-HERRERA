@@ -225,3 +225,10 @@ $$
 =\frac{7+3i}{29} \\
 \end{array}
 $$
+
+$$
+\begin{array}{l c l}
+{\frac{10-7i}{1+3i}} \\
+\\
+\end{array}
+$$
