@@ -227,3 +227,5 @@ $$
 $$
 
 **Calcula el valor absoluto de los siguientes números complejos**
+
+**43) |-9 - 9i|**
