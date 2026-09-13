@@ -143,7 +143,7 @@
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{10-7i}{1+3i}} \\
+{\frac{10-7i}{1+3i}} \\
 \\
 =(\frac{10-7i}{1+3i})(\frac{1-3i}{1-3i}) \\
 \\
@@ -157,7 +157,7 @@ $$
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{4+2i}{-1-10i}} \\
+{\frac{4+2i}{-1-10i}} \\
 \\
 =(\frac{4+2i}{-1-10i})(\frac{-1+10i}{-1+10i}) \\
 \\
@@ -171,7 +171,7 @@ $$
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{1+4i}{-1-6i}} \\
+{\frac{1+4i}{-1-6i}} \\
 \\
 =(\frac{1+4i}{-1-6i})(\frac{-1+6i}{-1+6i}) \\
 \\
@@ -185,7 +185,7 @@ $$
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{-8+4i}{1+i}} \\
+{\frac{-8+4i}{1+i}} \\
 \\
 =(\frac{-8+4i}{1+i})(\frac{1-i}{1-i}) \\
 \\
@@ -200,7 +200,7 @@ $$
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{-10+8i}{6+i}} \\
+{\frac{-10+8i}{6+i}} \\
 \\
 =(\frac{-10+8i}{6+i})(\frac{6-i}{6-i}) \\
 \\
@@ -214,7 +214,7 @@ $$
 
 $$
 \begin{array}{l c l}
-\textcolor{white}{\frac{2-2i}{4-10i}} \\
+{\frac{2-2i}{4-10i}} \\
 \\
 =(\frac{2-2i}{4-10i})(\frac{4+10i}{4+10i}) \\
 \\
@@ -225,16 +225,3 @@ $$
 =\frac{7+3i}{29} \\
 \end{array}
 $$
-
-$$
-\begin{array}{l c l}
-{\frac{10-7i}{1+3i}} \\
-\\
-=(\frac{10-7i}{1+3i})(\frac{1-3i}{1-3i}) \\
-\\
-=\frac{10-30i-7i+21i^2}{1-3i+3i-9i^2} \\
-\\
-=\frac{-11-37i}{10} \\
-\end{array}
-$$
-
