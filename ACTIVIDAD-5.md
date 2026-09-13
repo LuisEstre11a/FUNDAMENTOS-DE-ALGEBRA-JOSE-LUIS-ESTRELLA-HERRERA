@@ -225,3 +225,5 @@ $$
 =\frac{7+3i}{29} \\
 \end{array}
 $$
+
+**Calcula el valor absoluto de los siguientes números complejos**
