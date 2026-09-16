@@ -394,16 +394,12 @@ $$
 
 **57)**
 
-$$
-\begin{array}{l c l}
-2-2 \sqrt{3}i \\
-\\
-r=\sqrt{(2)^2+(-2 \sqrt{3})^2}=4 \\
-θ=tan^{-1}(-2 \sqrt{3}/2)=-60°+360°=300° \\
-\\
-4(cos300°+isen300°) \\
-\end{array}
-$$
+57. 2 - $2\sqrt3$ $\cdot$ i
+
+$$r= \sqrt{(2)^2+(-2\sqrt3)^2} = \sqrt{4+12} = \sqrt{16} = 4$$\
+$\Theta$ = $\tan^{-1}$ ($\frac{-2\sqrt3}{2}$) = -60°\
+Por lo tanto, 360° - 60° = 300°
+Z = 4(cos 300° + i sen 300°)
 
 **58)**
 
@@ -578,139 +574,96 @@ $$
 
 **69)**
 
-$$
-\begin{array}{l c l}
-\text{3 raices cubicas de:}\ -4 \sqrt{2}+4 \sqrt{2}i \\
-\\
-r= \sqrt{(-4 \sqrt{2})^2+(4 \sqrt{2})^2} & & θ=tan^{-1}(4 \sqrt{2}/ -4 \sqrt{2}) \\
-r= 8 & & θ=-45°+180° \\
-& & θ=135°\\
-\\
-\text{polar:}\ 8(cos135°+isen135°) \\
-\\
-1^{ra}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{8}=2 & cos \frac{135°+360°(0)}{3} & sen \frac{135°+360°(0)}{3} \\
-\\
-& =cos45° & =sen45° \\
-\\
-2(cos45°+isen45°) \\
-\\
-\\
-2^{da}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{8}=2 & cos \frac{135°+360°(1)}{3} & sen \frac{135°+360°(1)}{3} \\
-\\
-& =cos165° & =sen165° \\
-\\
-2(cos165°+isen165°) \\
-\\
-\\
-3^{ra}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{8}=2 & cos \frac{135°+360°(2)}{3} & sen \frac{135°+360°(2)}{3} \\
-\\
-& =cos285° & =sen285° \\
-\\
-2(cos285°+isen285°) \\
-\end{array}
-$$
+3 raíces cúbicas de $-4\sqrt2$ + $4\sqrt2$
 
+$$r= \sqrt{(-4\sqrt2)^{2}+(4\sqrt2)^{2}} = \sqrt{32+32} = \sqrt{64} = 8$$
+$\Theta$ = $\tan^{-1}$ ($\frac{4\sqrt2}{-4\sqrt2}$) = 45°
+Por lo tanto, 180° -45°= 135°
+
+Z= 8(cos 135° + i sen 135°)  n= 3  K= 0, 1, 2  r= $3\sqrt8$ = 2
+
+1era raíz cuadrada; K=0:
+$$cos \frac{135 + 360 \cdot 0}{3} = cos \frac{135}{3} = cos 45°$$
+$$sen \frac{135 + 360 \cdot 0}{3} = sen \frac{135}{3} = sen 45°$$
+
+Respuesta= 2(cos 45° + i sen 45°)
+
+2da raíz cuadrada; K=1:
+$$cos \frac{135 + 360 \cdot 1}{3} = cos \frac{495}{3} = cos 165°$$
+$$sen \frac{135 + 360 \cdot 1}{3} = sen \frac{495}{3} = sen 165°$$
+
+Respuesta=2(cos 165° + i sen 165°)
+
+3er raíz cuadrada; K=2:
+$$cos \frac{135 + 360 \cdot 2}{3} = cos \frac{855}{3} = cos 285°$$
+$$sen \frac{135 + 360 \cdot 2}{3} = sen \frac{855}{3} = sen 285°$$
+
+Respuesta= 2(cos 285° + i sen 285°)
 **70)**
 
-$$
-\begin{array}{l c l}
-\text{3 raices cubicas de:}\ - \frac{27}{8} \\
-\\
-r= \sqrt{(- \frac{27}{8})^2+(0)^2} & & θ=tan^{-1}(0/ - \frac{27}{8}) \\
-r= 3 & & θ=0° \\
-\\
-\text{polar:}\ 3(cos0°+isen0°) \\
-\\
-1^{ra}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{3}=1.44 & cos \frac{0°+360°(0)}{3} & sen \frac{0°+360°(0)}{3} \\
-\\
-& =cos0° & =sen0° \\
-\\
-1.44(cos0°+isen0°) \\
-\\
-\\
-2^{da}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{3}=1.44 & cos \frac{0°+360°(1)}{3} & sen \frac{0°+360°(1)}{3} \\
-\\
-& =cos120° & =sen120° \\
-\\
-1.44(cos120°+isen120°) \\
-\\
-\\
-3^{ra}\ \text{raiz cubica:} \\
-\\
-\sqrt[3]{3}=2 & cos \frac{0°+360°(2)}{3} & sen \frac{0°+360°(2)}{3} \\
-\\
-& =cos240° & =sen240° \\
-\\
-1.44(cos240°+isen240°) \\
-\end{array}
-$$
+3 raíces cúbicas de $\frac{-27}{8}$
+
+$$r= \sqrt{(\frac{-27}{8})^{2}+(0)^{2}} = {\frac{27}{8}}$$
+$\Theta$ = $\tan^{-1}$ ($\frac{0}{\frac{-27}{8}}$) = 0°
+Por lo tanto, 180° + 0° = 180°
+
+Z= $\frac{-27}{8}$(cos 180° + i sen 180°)  n= 3  K= 0, 1, 2  r= $3\sqrt\frac{-27}{8}$ = $\frac{3}{2}$
+
+1eera raíz cuadrada; K=0:
+$$cos \frac{180 + 360 \cdot 0}{3} = cos \frac{180}{3} = cos 60°$$
+$$sen \frac{180 + 360 \cdot 0}{3} = sen \frac{180}{3} = sen 60°$$
+
+Respuesta= $\frac{3}{2}$(cos 60° + i sen 60°)
+
+2da raíz cuadrada; K=1:
+$$cos \frac{180 + 360 \cdot 1}{3} = cos \frac{540}{3} = cos 180°$$
+$$sen \frac{180 + 360 \cdot 1}{3} = sen \frac{540}{3} = sen 180°$$
+
+Respuesta= $\frac{3}{2}$(cos 180° + i sen 180°)
+
+3er raíz cuadrada; K=2:
+$$cos \frac{180 + 360 \cdot 2}{3} = cos \frac{900}{3} = cos 300°$$
+$$sen \frac{180 + 360 \cdot 2}{3} = sen \frac{900}{3} = sen 300°$$
+
+Respuesta= $\frac{3}{2}$(cos 300° + i sen 300°)
 
 **71)**
 
-$$
-\begin{array}{l c l}
-\text{5 raices de:}\ -32i \\
-\\
-r= \sqrt{(0)^2+(-32)^2} & & θ=tan^{-1}(-32/ 0) \\
-r= 32 & & θ=0° \\
-\\
-\text{polar:}\ 32(cos0°+isen0°) \\
-\\
-1^{ra}\ \text{raiz:} \\
-\\
-\sqrt{32}=5.65 & cos \frac{0°+360°(0)}{2} & sen \frac{0°+360°(0)}{2} \\
-\\
-& =cos0° & =sen0° \\
-\\
-5.65(cos0°+isen0°) \\
-\\
-\\
-2^{da}\ \text{raiz:} \\
-\\
-\sqrt{32}=5.65 & cos \frac{0°+360°(1)}{2} & sen \frac{0°+360°(1)}{2} \\
-\\
-& =cos180° & =sen180° \\
-\\
-5.65(cos180°+isen180°) \\
-\\
-\\
-3^{ra}\ \text{raiz:} \\
-\\
-\sqrt{32}=5.65 & cos \frac{0°+360°(2)}{2} & sen \frac{0°+360°(2)}{2} \\
-\\
-& =cos360° & =sen360° \\
-\\
-5.65(cos360°+isen360°) \\
-\\
-\\
-4^{ta}\ \text{raiz:} \\
-\\
-\sqrt{32}=5.65 & cos \frac{0°+360°(3)}{2} & sen \frac{0°+360°(3)}{2} \\
-\\
-& =cos540° & =sen540° \\
-\\
-5.65(cos540°+isen540°) \\
-\\
-\\
-5^{ta}\ \text{raiz:} \\
-\\
-\sqrt{32}=5.65 & cos \frac{0°+360°(4)}{2} & sen \frac{0°+360°(4)}{2} \\
-\\
-& =cos720° & =sen720° \\
-\\
-5.65(cos720°+isen720°) \\
-\end{array}
-$$
+5 raíces de -32 i
+
+$$r= \sqrt{(0)^{2}+(-32)^{2}} = \sqrt{1024} = 32$$
+$\Theta$ = 270° 
+Z= 32(cos 270° + i sen 270°)  n= 5  K= 0, 1, 2, 3, 4  r= $5\sqrt32$ = 2
+
+Cuando K=0:
+$$cos \frac{270 + 360 \cdot 0}{5} = cos \frac{270}{5} = cos 54°$$
+$$sen \frac{270 + 360 \cdot 0}{5} = sen \frac{270}{5} = sen 54°$$
+
+Respuesta= 2(cos 54° + i sen 54°)
+
+Cuando K=1:
+$$cos \frac{270 + 360 \cdot 1}{5} = cos \frac{630}{5} = cos 126°$$
+$$sen \frac{270 + 360 \cdot 1}{5} = sen \frac{630}{5} = sen 126°$$
+
+Respuesta= 2(cos 126° + i sen 126°)
+
+Cuando K=2:
+$$cos \frac{270 + 360 \cdot 2}{5} = cos \frac{990}{5} = cos 198°$$
+$$sen \frac{270 + 360 \cdot 2}{5} = sen \frac{990}{5} = sen 198°$$
+
+Respuesta= 2(cos 198° + i sen 198°)
+
+Cuando K=3:
+$$cos \frac{270 + 360 \cdot 3}{5} = cos \frac{1350}{5} = cos 270°$$
+$$sen \frac{270 + 360 \cdot 3}{5} = sen \frac{1350}{5} = sen 270°$$
+
+Respuesta= 2(cos 270° + i sen 270°)
+
+Cuando K=4:
+$$cos \frac{270 + 360 \cdot 4}{5} = cos \frac{1710}{5} = cos 342°$$
+$$sen \frac{270 + 360 \cdot 4}{5} = sen \frac{1710}{5} = sen 342°$$
+
+Respuesta= 2(cos 342° + i sen 342°)
 
 **72)**
 
