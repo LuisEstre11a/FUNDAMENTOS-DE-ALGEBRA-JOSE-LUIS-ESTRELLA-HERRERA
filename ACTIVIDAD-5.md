@@ -599,6 +599,7 @@ $$cos \frac{135 + 360 \cdot 2}{3} = cos \frac{855}{3} = cos 285°$$
 $$sen \frac{135 + 360 \cdot 2}{3} = sen \frac{855}{3} = sen 285°$$
 
 Respuesta= 2(cos 285° + i sen 285°)
+
 **70)**
 
 3 raíces cúbicas de $\frac{-27}{8}$
