@@ -77,3 +77,37 @@
 101.0F0F= 0000→0; 1111→F; 0000→0; 1111→F= 00001111 00001111
 
 102.8001= 1000→8; 0000→0; 0000→0; 1→1= 10000000 00000001
+
+**Grado y términos de polinomios (103-108)
+Grado = el exponente más alto que aparece (0=constante, 1=lineal, 2=cuadrático, 3=cúbico, luego "cuarto grado", "quinto grado", etc). Términos = cuántos sumandos hay (1=monomio, 2=binomio, 3=trinomio, 4+=solo se dice "de tantos términos").**
+
+5n + 5 el exponente más alto de n es 1 -> lineal cuenta los términos: "5n" y "5" -> 2 términos -> binomio
+
+-10p^3 - 6 + 9p^2 - 4p^5 - 2p^8 el exponente más alto es el 8 (de -2p^8) -> octavo grado términos: -10p^3, -6, 9p^2, -4p^5, -2p^8 -> son 5 -> polinomio de 5 términos
+
+7x^8 exponente más alto 8 -> octavo grado solo hay un término -> monomio
+
+-2n + n^4 + 10n^6 exponente más alto 6 -> sexto grado términos: -2n, n^4, 10n^6 -> 3 -> trinomio
+
+5 no tiene variable, es puro número -> grado 0, se le llama constante un solo término -> monomio
+
+5v^7 exponente más alto 7 -> séptimo grado un solo término -> monomio
+
+Problemas de aplicación (109-114)
+--- Trabajo conjunto --- Si alguien tarda "a" horas haciendo algo solo, en 1 hora hace 1/a del trabajo (esa es su "tasa"). Si juntos trabajan las tasas se suman: 1/a + 1/b = 1/t (t = tiempo juntos)
+
+Amy tarda 8h sola. Junto con Jill tardan 3.08h. ¿Cuánto tarda Jill sola (j)? planteo: 1/8 + 1/j = 1/3.08 despejo 1/j: 1/j = 1/3.08 - 1/8 1/3.08 = 0.3247... 1/8 = 0.125 1/j = 0.3247 - 0.125 = 0.1997 j = 1/0.1997 ≈ 5.01horas
+
+Jaidee tarda 5h, Ted tarda 7h. Juntos ¿cuánto tardan (t)? 1/t = 1/5 + 1/7 saco común denominador (35): 7/35 + 5/35 = 12/35 t = 35/12 ≈ 2.92 horas (como 2h 55min)
+
+--- Movimiento: distancia = velocidad x tiempo ---
+
+El avión de carga salió 4h antes que el de la Fuerza Aérea. Este último voló 6h a 310km/hy alcanzó al de carga. como "alcanzarlo" significa que llegaron al mismo punto, ambos recorrieron la MISMA distancia distancia = 310 x 6 = 1860 km el avión de carga voló ese mismo tramo pero en 4+6 = 10 horas (porque salió antes) velocidad del avión de carga = 1860 / 10 = 186 km/h
+
+Ida a 35 km/h, regreso a 49 km/h. El regreso tardó 10 horas. ida y regreso son la MISMA distancia (mismo camino, ida y vuelta) distancia = 49 x 10 = 490 km (uso el tramo de regreso porque ahí sé el tiempo) tiempo de ida = distancia / velocidad de ida = 490/35 = 14 horas
+
+--- Mezclas: se calcula la cantidad real del ingrediente en cada parte y se suma ---
+
+1 yd³ con 30% de arena + 4 yd³ con 20% de arena. ¿Qué % de arena tiene la mezcla? arena en la primera parte: 1 x 0.30 = 0.30 yd³ arena en la segunda parte: 4 x 0.20 = 0.80 yd³ arena total: 0.30 + 0.80 = 1.10 yd³ volumen total de la mezcla: 1 + 4 = 5 yd³ porcentaje = 1.10 / 5 = 0.22 = 22%
+
+7L de marca A (11% jugo) + 6L de marca B (24% jugo). ¿Qué % de jugo tiene la mezcla? jugo de la marca A: 7 x 0.11 = 0.77 L jugo de la marca B: 6 x 0.24 = 1.44 L jugo total: 0.77 + 1.44 = 2.21 L volumen total: 7 + 6 = 13 L porcentaje = 2.21 / 13 ≈ 0.17 = 17%
