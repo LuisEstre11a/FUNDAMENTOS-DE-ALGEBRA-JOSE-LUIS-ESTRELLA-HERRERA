@@ -1,4 +1,4 @@
-Binario a decimal (73-78)
+# **Binario a decimal (73-78)**
 Cada posición vale una potencia de 2 (2^0, 2^1, 2^2...) contando de derecha a izq. Sumas las potencias donde hay un 1.
 
 00001111 bits en 1: posiciones 3,2,1,0 -> 2^3+2^2+2^1+2^0 = 8+4+2+1 = 15
