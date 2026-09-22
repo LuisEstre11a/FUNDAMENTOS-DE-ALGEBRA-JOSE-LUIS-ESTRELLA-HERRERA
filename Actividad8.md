@@ -127,10 +127,16 @@ Jaidee tarda 5h, Ted tarda 7h. Juntos ¿cuánto tardan (t)? 1/t = 1/5 + 1/7 saco
 
 El avión de carga salió 4h antes que el de la Fuerza Aérea. Este último voló 6h a 310km/hy alcanzó al de carga. como "alcanzarlo" significa que llegaron al mismo punto, ambos recorrieron la MISMA distancia distancia = 310 x 6 = 1860 km el avión de carga voló ese mismo tramo pero en 4+6 = 10 horas (porque salió antes) velocidad del avión de carga = 1860 / 10 = 186 km/h
 
+**112)**
+
 Ida a 35 km/h, regreso a 49 km/h. El regreso tardó 10 horas. ida y regreso son la MISMA distancia (mismo camino, ida y vuelta) distancia = 49 x 10 = 490 km (uso el tramo de regreso porque ahí sé el tiempo) tiempo de ida = distancia / velocidad de ida = 490/35 = 14 horas
+
+**113)**
 
 --- Mezclas: se calcula la cantidad real del ingrediente en cada parte y se suma ---
 
 1 yd³ con 30% de arena + 4 yd³ con 20% de arena. ¿Qué % de arena tiene la mezcla? arena en la primera parte: 1 x 0.30 = 0.30 yd³ arena en la segunda parte: 4 x 0.20 = 0.80 yd³ arena total: 0.30 + 0.80 = 1.10 yd³ volumen total de la mezcla: 1 + 4 = 5 yd³ porcentaje = 1.10 / 5 = 0.22 = 22%
+
+**114)**
 
 7L de marca A (11% jugo) + 6L de marca B (24% jugo). ¿Qué % de jugo tiene la mezcla? jugo de la marca A: 7 x 0.11 = 0.77 L jugo de la marca B: 6 x 0.24 = 1.44 L jugo total: 0.77 + 1.44 = 2.21 L volumen total: 7 + 6 = 13 L porcentaje = 2.21 / 13 ≈ 0.17 = 17%
