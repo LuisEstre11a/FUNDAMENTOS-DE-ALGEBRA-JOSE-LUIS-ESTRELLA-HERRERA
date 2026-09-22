@@ -2,7 +2,7 @@
 
 ## Actividad #5 - Números complejos.
 
-## Alumna: José Luis Estrella Herrera
+## Alumno: José Luis Estrella Herrera
 ---
 #### Realiza las conversiones de binario a decimal.
 
