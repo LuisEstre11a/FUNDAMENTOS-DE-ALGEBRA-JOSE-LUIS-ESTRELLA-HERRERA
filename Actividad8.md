@@ -78,27 +78,50 @@
 
 102.8001= 1000→8; 0000→0; 0000→0; 1→1= 10000000 00000001
 
-**Grado y términos de polinomios (103-108)
-Grado = el exponente más alto que aparece (0=constante, 1=lineal, 2=cuadrático, 3=cúbico, luego "cuarto grado", "quinto grado", etc). Términos = cuántos sumandos hay (1=monomio, 2=binomio, 3=trinomio, 4+=solo se dice "de tantos términos").**
+**Nombra los polinomios por su exponente más alto y número de terminos**
+
+*Grado y términos de polinomios (103-108)
+Grado = el exponente más alto que aparece (0=constante, 1=lineal, 2=cuadrático, 3=cúbico, luego "cuarto grado", "quinto grado", etc). 
+Términos = cuántos sumandos hay (1=monomio, 2=binomio, 3=trinomio, 4+=solo se dice "de tantos términos").*
+
+**103)**
 
 5n + 5 el exponente más alto de n es 1 -> lineal cuenta los términos: "5n" y "5" -> 2 términos -> binomio
 
+**104)**
+
 -10p^3 - 6 + 9p^2 - 4p^5 - 2p^8 el exponente más alto es el 8 (de -2p^8) -> octavo grado términos: -10p^3, -6, 9p^2, -4p^5, -2p^8 -> son 5 -> polinomio de 5 términos
+
+**105)**
 
 7x^8 exponente más alto 8 -> octavo grado solo hay un término -> monomio
 
+**106)**
+
 -2n + n^4 + 10n^6 exponente más alto 6 -> sexto grado términos: -2n, n^4, 10n^6 -> 3 -> trinomio
+
+**107)**
 
 5 no tiene variable, es puro número -> grado 0, se le llama constante un solo término -> monomio
 
+**108)**
+
 5v^7 exponente más alto 7 -> séptimo grado un solo término -> monomio
+
+**Resuelve las siguientes preguntas**
 
 Problemas de aplicación (109-114)
 --- Trabajo conjunto --- Si alguien tarda "a" horas haciendo algo solo, en 1 hora hace 1/a del trabajo (esa es su "tasa"). Si juntos trabajan las tasas se suman: 1/a + 1/b = 1/t (t = tiempo juntos)
 
+**109)**
+
 Amy tarda 8h sola. Junto con Jill tardan 3.08h. ¿Cuánto tarda Jill sola (j)? planteo: 1/8 + 1/j = 1/3.08 despejo 1/j: 1/j = 1/3.08 - 1/8 1/3.08 = 0.3247... 1/8 = 0.125 1/j = 0.3247 - 0.125 = 0.1997 j = 1/0.1997 ≈ 5.01horas
 
+**110)**
+
 Jaidee tarda 5h, Ted tarda 7h. Juntos ¿cuánto tardan (t)? 1/t = 1/5 + 1/7 saco común denominador (35): 7/35 + 5/35 = 12/35 t = 35/12 ≈ 2.92 horas (como 2h 55min)
+
+**111)**
 
 --- Movimiento: distancia = velocidad x tiempo ---
 
