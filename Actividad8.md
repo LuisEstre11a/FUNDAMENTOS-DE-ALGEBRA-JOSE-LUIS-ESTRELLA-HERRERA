@@ -2,7 +2,7 @@
 
 ## Actividad #5 - Números complejos.
 
-## Alumna: Mariana Donaji López Heredia
+## Alumna: José Luis Estrella Herrera
 ---
 #### Realiza las conversiones de binario a decimal.
 
