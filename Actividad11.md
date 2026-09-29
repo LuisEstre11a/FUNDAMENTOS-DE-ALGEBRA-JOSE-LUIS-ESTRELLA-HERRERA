@@ -2,7 +2,7 @@
 
 ## Actividad #5 - Números complejos.
 
-## Alumna: Mariana Donaji López Heredia
+## Alumna: José Luis Estrella Herrera
 ---
 #### Simplifica las siguientes expresiones
 
