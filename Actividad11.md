@@ -2,7 +2,7 @@
 
 ## Actividad #11 
 
-## Alumna: José Luis Estrella Herrera
+## Alumno: José Luis Estrella Herrera
 ---
 #### Simplifica las siguientes expresiones
 
