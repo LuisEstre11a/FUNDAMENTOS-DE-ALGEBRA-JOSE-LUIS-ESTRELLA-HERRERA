@@ -4,6 +4,8 @@
 
 ## 1. Binomio al cuadrado (suma)
 
+**Explicación de la regla:** Para resolver un problema de este tipo comenzamos identificando "a" y "b", primero la variable que es "a" se eleva al cuadrado, después se le suma el resultado de multiplicar 2 por la primera variable (a) y ese resultado también multiplicarlo pero ahora por la variable "b" y en este punto nada más elevamos al cuadrado la segunda variable (b) y listo.
+
 **Fórmula:** (a + b)² = a² + 2ab + b²
 
 **Ejercicio:** (x + 5)² = x² + 10x + 25
@@ -38,6 +40,8 @@
 
 ## 3. Binomio conjugado
 
+**Explicación de la regla:** Para resolver un problema de este tipo comenzamos identificando "a" y "b", después elevamos la primera variable (a) al cuadrado y le restamos la segunda variable (b) pero esta misma elevada al cuadrado también.
+
 **Fórmula:** (a + b)(a − b) = a² − b²
 
 **Ejercicio:** (x + 7)(x − 7) = x² − 49
@@ -54,6 +58,8 @@
 
 ## 4. Binomio con término común
 
+**Explicación de la regla:** Para resolver un problema de este tipo comenzamos identificando el T.C. (Termino Común), la variable "a" y la variable "b", después elevamos al cuadrado el T.C. al cuadrado, le sumamos el resultado de sumar las dos variables (a+b) y multiplicar ese resultado por T.C. y por último sumamos el resultado de multiplicar nuestras dos variables (a*b).
+
 **Fórmula:** (x + a)(x + b) = x² + (a + b)x + ab
 
 **Ejercicio:** (x + 3)(x + 8) = x² + 11x + 24
@@ -68,6 +74,8 @@
 ---
 
 ## 5. Binomio al cubo
+
+**Explicación de la regla:** Para resolver un problema de este tipo comenzamos elevando cada variable al cuadrado y poniéndolas abajo de donde corresponda según su variable, después multiplicamos las variables originales por su resultado de elevarlas al cuadrado y lo que nos de lo ponemos abajo de donde corresponda según su variable siguiendo el formato de columna, esos últimos resultados que tuvimos son los resultados de nuestras dos columnas, ahora pasamos a sacar las diagonales, se multiplica cómo su nombre lo dice en diagonal, comenzamos multiplicando el resultado de elevar las variables originales al cuadrado con las variables originales y eso se multiplica por tres, se hace de abajo para arriba y de izquierda a derecha, resolvemos la primera diagonal y después la segunda diagonal, el resultado que obtengamos de cada diagonal son los dos datos que nos faltan, ahora ya tenemos el resultado de nuestras columnas y de nuestras diagonales, queda todo junto pero está desordenado, se ordena de la siguiente manera: resultado de la primera columna + resultado de la primera diagonal + resultado de la segunda diagonal + resultado de la segunda columna.
 
 **Fórmula:** (a + b)³ = a³ + 3a²b + 3ab² + b³
 
