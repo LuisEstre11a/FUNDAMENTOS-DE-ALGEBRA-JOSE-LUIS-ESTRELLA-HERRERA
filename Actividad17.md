@@ -3,50 +3,196 @@
 
 **Instrucción:** Factoriza los siguientes polinomios a su mínima expresión.
 
-**33.** 5n³ + 31n² − 28n
+Ejercicios de factorización (33–56)
 
-**34.** 42n² + 180n + 162
+**Ejercicio 33**
 
-**35.** 28k² − 260k + 288
+Expresión:
+5n³ + 31n² − 28n
 
-**36.** 5n² + 16n + 12
+Respuesta:
+n(5n − 4)(n + 7)
 
-**37.** 7p² − 31p + 30
+**Ejercicio 34**
 
-**38.** 7x² + 5x
+Expresión:
+42n² + 180n + 162
 
-**39.** 42x² + 90x − 108
+Respuesta:
+6(7n + 9)(n + 3)
 
-**40.** 7n² + 67n − 30
+**Ejercicio 35**
 
-**41.** 24n² − 24n + 6
+Expresión:
+28k² − 260k + 288
 
-**42.** 24x² + 216x + 486
+Respuesta:
+4(7k − 9)(k − 8)
 
-**43.** 64m² − 112m + 49
+**Ejercicio 36**
 
-**44.** 100n² + 20n + 1
+Expresión:
+5n² + 16n + 12
 
-**45.** 81x⁶ − 90x³ + 25
+Respuesta:
+(5n + 6)(n + 2)
 
-**46.** 147k⁶ − 336k³ + 192
+**Ejercicio 37**
 
-**47.** 36a⁸ − 192a⁵ + 256a²
+Expresión:
+7p² − 31p + 30
 
-**48.** 49 + 28p³ + 4p⁶
+Respuesta:
+(7p − 10)(p − 3)
 
-**49.** 9x² − 49
+**Ejercicio 38**
 
-**50.** 4a² − 81
+Expresión:
+7x² + 5x
 
-**51.** 27 − 147p²
+Respuesta:
+x(7x + 5)
 
-**52.** 250n² − 490
+**Ejercicio 39**
 
-**53.** 81k⁶ − 16
+Expresión:
+42x² + 90x − 108
 
-**54.** x⁶ − 9
+Respuesta:
+6(7x − 3)(x + 6)
 
-**55.** 25n⁶ − 49
+**Ejercicio 40**
 
-**56.** 600a⁷ − 6a
+Expresión:
+7n² + 67n − 30
+
+Respuesta:
+(7n − 3)(n + 10)
+
+**Ejercicio 41**
+
+Expresión:
+24n² − 24n + 6
+
+Respuesta:
+6(2n − 1)²
+
+**Ejercicio 42**
+
+Expresión:
+24x² + 216x + 486
+
+Respuesta:
+6(2x + 9)²
+
+**Ejercicio 43**
+
+Expresión:
+64m² − 112m + 49
+
+Respuesta:
+(8m − 7)²
+
+**Ejercicio 44**
+
+Expresión:
+100n² + 20n + 1
+
+Respuesta:
+(10n + 1)²
+
+**Ejercicio 45**
+
+Expresión:
+81x⁶ − 90x³ + 25
+
+Respuesta:
+(9x³ − 5)²
+
+**Ejercicio 46**
+
+Expresión:
+147k⁶ − 336k³ + 192
+
+Respuesta:
+3(7k³ − 8)²
+
+**Ejercicio 47**
+
+Expresión:
+36a⁸ − 192a⁵ + 256a²
+
+Respuesta:
+4a²(3a³ − 8)²
+
+**Ejercicio 48**
+
+Expresión:
+49 + 28p³ + 4p⁶
+
+Respuesta:
+(7 + 2p³)²
+
+**Ejercicio 49**
+
+Expresión:
+9x² − 49
+
+Respuesta:
+(3x − 7)(3x + 7)
+
+**Ejercicio 50**
+
+Expresión:
+4a² − 81
+
+Respuesta:
+(2a − 9)(2a + 9)
+
+**Ejercicio 51**
+
+Expresión:
+27 − 147p²
+
+Respuesta:
+3(3 − 7p)(3 + 7p)
+
+**Ejercicio 52**
+
+Expresión:
+250n² − 490
+
+Respuesta:
+10(5n − 7)(5n + 7)
+
+**Ejercicio 53**
+
+Expresión:
+81k⁶ − 16
+
+Respuesta:
+(9k³ − 4)(9k³ + 4)
+
+**Ejercicio 54**
+
+Expresión:
+x⁶ − 9
+
+Respuesta:
+(x³ − 3)(x³ + 3)
+
+**Ejercicio 55**
+
+Expresión:
+25n⁶ − 49
+
+Respuesta:
+(5n³ − 7)(5n³ + 7)
+
+**Ejercicio 56**
+
+Expresión:
+600a⁷ − 6a
+
+Respuesta:
+6a(10a³ − 1)(10a³ + 1)
