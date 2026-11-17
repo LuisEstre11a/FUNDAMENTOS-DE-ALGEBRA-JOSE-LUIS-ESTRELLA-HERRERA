@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graficador de Matrices - Blog Matemático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            color: #222;
+        }
+
+        header {
+            border-bottom: 2px solid #1a5276;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #1a5276;
+            margin: 10px 0 5px 0;
+        }
+
+        .volver {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .subtitulo {
+            font-size: 18px;
+            color: #2980b9;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .panel {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 12px 15px;
+            margin-bottom: 12px;
+        }
+
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+            margin: 6px 0;
+        }
+
+        .etiqueta {
+            font-weight: bold;
+            min-width: 110px;
+        }
+
+        button {
+            background-color: #1a5276;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        button.secundario {
+            background-color: #7f8c8d;
+        }
+
+        select, input[type="number"] {
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 110px;
+            font-family: Consolas, monospace;
+            font-size: 13px;
+        }
+
+        /* ----- Pestañas ----- */
+
+        #pestanas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            border-bottom: 2px solid #1a5276;
+        }
+
+        .pestana {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #e5e5e5;
+            color: #555;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            border-radius: 6px 6px 0 0;
+            padding: 6px 10px;
+            font-size: 14px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .pestana:hover {
+            background-color: #d6dbdf;
+        }
+
+        .pestana.activa {
+            background-color: #1a5276;
+            border-color: #1a5276;
+            color: white;
+            font-weight: bold;
+        }
+
+        .pestana small {
+            font-weight: normal;
+            opacity: 0.75;
+        }
+
+        .cerrar {
+            font-size: 16px;
+            line-height: 1;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .cerrar:hover {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+
+        /* ----- Lienzo ----- */
+
+        .marco-lienzo {
+            overflow: auto;
+            max-height: 560px;
+            background-color: #e5e5e5;
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+            padding: 8px;
+        }
+
+        #lienzo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        #info {
+            font-size: 13px;
+            color: #555;
+            margin-top: 6px;
+        }
+
+        #mensaje {
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            margin: 10px 0;
+            min-height: 18px;
+        }
+
+        #mensaje.ok {
+            background-color: #d4efdf;
+            color: #196f3d;
+        }
+
+        #mensaje.error {
+            background-color: #fadbd8;
+            color: #922b21;
+        }
+
+        /* ----- Operaciones ----- */
+
+        .columnas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .columnas .panel {
+            flex: 1 1 300px;
+        }
+
+        .titulo-panel {
+            margin: 0 0 8px 0;
+            font-size: 16px;
+            color: #1a5276;
+        }
+
+        .operaciones {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .operaciones li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .operaciones li:last-child {
+            border-bottom: none;
+        }
+
+        .operaciones a {
+            color: #1a5276;
+            font-weight: bold;
+            text-decoration: none;
+            min-width: 105px;
+        }
+
+        .operaciones a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .dos-columnas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            column-gap: 24px;
+        }
+
+        .dos-columnas li:last-child {
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .formula {
+            font-family: "Times New Roman", serif;
+            font-size: 17px;
+        }
+
+        .valor-k {
+            margin-left: auto;
+            font-size: 14px;
+        }
+
+        .valor-k input {
+            width: 60px;
+        }
+
+        .det-valor {
+            font-family: "Times New Roman", serif;
+            font-size: 17px;
+            font-weight: bold;
+            color: #196f3d;
+        }
+
+        .ws {
+            margin-left: auto;
+            font-size: 11px;
+            color: #7f8c8d;
+            background-color: #ececec;
+            border-radius: 3px;
+            padding: 1px 6px;
+        }
+
+        details {
+            margin: 8px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .nota {
+            font-size: 13px;
+            color: #555;
+            margin: 6px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="volver">← Volver al índice</a>
+        <h1>Graficador de Matrices</h1>
+        <small>Cada número de la matriz es un pixel: 0 = negro, 255 = blanco.</small>
+    </header>
+
+    <!-- ===================== IMAGEN ===================== -->
+
+    <div id="pestanas"></div>
+    <div class="marco-lienzo">
+        <canvas id="lienzo"></canvas>
+    </div>
+    <div id="info"></div>
+    <p id="mensaje"></p>
+
+    <!-- ===================== CARGAR Y VER ===================== -->
+
+    <div class="panel">
+        <div class="fila">
+            <span class="etiqueta">Cargar</span>
+            <select id="selector-galeria"></select>
+            <button id="btn-galeria">Cargar de la galería</button>
+        </div>
+        <div class="fila">
+            <span class="etiqueta"></span>
+            <input type="file" id="archivo" accept=".txt,text/plain">
+        </div>
+        <details id="caja-editor">
+            <summary>Editor de texto</summary>
+            <textarea id="editor" placeholder="Escribe o pega una matriz: un renglón por línea, números separados por espacios.&#10;0 255 0&#10;255 0 255"></textarea>
+            <div class="fila">
+                <button id="btn-editor">Cargar matriz del editor</button>
+            </div>
+        </details>
+        <div class="fila">
+            <span class="etiqueta">Tamaño de pixel</span>
+            <label><input type="checkbox" id="pixel-auto" checked> Automático</label>
+            <input type="range" id="pixel-tam" min="1" max="64" value="1">
+            <span id="pixel-valor"></span>
+        </div>
+        <div class="fila">
+            <span class="etiqueta">Mostrar</span>
+            <label><input type="checkbox" id="ver-cuadricula" checked> Cuadrícula</label>
+            <label><input type="checkbox" id="ver-valores"> Valores</label>
+        </div>
+        <div class="fila">
+            <span class="etiqueta">Pestaña activa</span>
+            <button id="btn-descargar-png" class="secundario">Descargar imagen .png</button>
+            <button id="btn-descargar" class="secundario">Descargar .txt</button>
+            <button id="btn-a-editor" class="secundario">Copiar al editor</button>
+        </div>
+        <div class="fila">
+            <span class="etiqueta"></span>
+            <button id="btn-a-blanco" class="secundario">Poner A en blanco</button>
+        </div>
+        <p class="nota">La primera matriz se carga en A y la segunda en B; solo caben dos (cierra B o pon A en blanco para cargar otra).
+           La cuadrícula aparece desde bloques de 4 px y los valores desde 20 px. El .png se descarga sin cuadrícula ni valores.</p>
+    </div>
+
+    <!-- ===================== OPERACIONES ===================== -->
+
+    <h2 class="subtitulo">Operaciones</h2>
+
+    <div class="columnas">
+
+        <!-- Siempre visible: A siempre existe -->
+        <div class="panel" id="ops-A">
+            <h3 class="titulo-panel">Matriz A</h3>
+            <ul class="operaciones">
+                <li>
+                    <a href="#" data-op="escalar" data-matriz="A">Escalar</a>
+                    <span class="formula">k · A</span>
+                    <label class="valor-k">k = <input type="number" id="k-A" value="1.5" step="0.1"></label>
+                </li>
+                <li><a href="#" data-op="transpuesta" data-matriz="A">Transpuesta</a> <span class="formula">A<sup>T</sup></span></li>
+                <li><a href="#" data-op="negativo" data-matriz="A">Negativo</a> <span class="formula">255 − A</span></li>
+                <li><a href="#" data-op="determinante" data-matriz="A">Determinante</a> <span class="formula">|A|</span> <span class="det-valor" id="det-A"></span> <span class="ws">W2</span></li>
+                <li><a href="#" data-op="inversa" data-matriz="A">Inversa</a> <span class="formula">A<sup>−1</sup></span> <span class="ws">W4</span></li>
+            </ul>
+        </div>
+
+        <!-- Aparece al cargar B -->
+        <div class="panel" id="ops-B" hidden>
+            <h3 class="titulo-panel">Matriz B</h3>
+            <ul class="operaciones">
+                <li>
+                    <a href="#" data-op="escalar" data-matriz="B">Escalar</a>
+                    <span class="formula">k · B</span>
+                    <label class="valor-k">k = <input type="number" id="k-B" value="1.5" step="0.1"></label>
+                </li>
+                <li><a href="#" data-op="transpuesta" data-matriz="B">Transpuesta</a> <span class="formula">B<sup>T</sup></span></li>
+                <li><a href="#" data-op="negativo" data-matriz="B">Negativo</a> <span class="formula">255 − B</span></li>
+                <li><a href="#" data-op="determinante" data-matriz="B">Determinante</a> <span class="formula">|B|</span> <span class="det-valor" id="det-B"></span> <span class="ws">W2</span></li>
+                <li><a href="#" data-op="inversa" data-matriz="B">Inversa</a> <span class="formula">B<sup>−1</sup></span> <span class="ws">W4</span></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Aparece al cargar B: operaciones con A y B -->
+    <div class="panel" id="ops-AB" hidden>
+        <h3 class="titulo-panel">Matriz resultante</h3>
+        <ul class="operaciones dos-columnas">
+            <li><a href="#" data-op="sumar" data-matriz="AB">Suma</a> <span class="formula">A + B</span></li>
+            <li><a href="#" data-op="restarAB" data-matriz="AB">Resta</a> <span class="formula">A − B</span></li>
+            <li><a href="#" data-op="restarBA" data-matriz="AB">Resta</a> <span class="formula">B − A</span></li>
+            <li><a href="#" data-op="promedio" data-matriz="AB">Promedio</a> <span class="formula">½ (A + B)</span></li>
+            <li><a href="#" data-op="multiplicarAB" data-matriz="AB">Producto</a> <span class="formula">A · B</span></li>
+            <li><a href="#" data-op="multiplicarBA" data-matriz="AB">Producto</a> <span class="formula">B · A</span></li>
+        </ul>
+    </div>
+
+    <p class="nota">Cada operación muestra su resultado en la pestaña Resultado; el determinante es un número
+       y aparece junto a su enlace. A y B nunca cambian. W2 y W4: se programan en esos workshops.</p>
+
+    <!-- Matemáticas, dibujo, galería y lógica de la página (en ese orden) -->
+    <script src="graficador/matriz.js"></script>
+    <script src="graficador/lienzo.js"></script>
+
+    <script src="graficador/imagenes/galeria.js"></script>
+    <script src="graficador/imagenes/casita.js"></script>
+    <script src="graficador/imagenes/flecha.js"></script>
+    <script src="graficador/imagenes/carita.js"></script>
+    <script src="graficador/imagenes/corazon.js"></script>
+    <script src="graficador/imagenes/tablero.js"></script>
+    <script src="graficador/imagenes/degradado.js"></script>
+    <script src="graficador/imagenes/ondas.js"></script>
+
+    <script src="graficador/app.js"></script>
+</body>
+</html>

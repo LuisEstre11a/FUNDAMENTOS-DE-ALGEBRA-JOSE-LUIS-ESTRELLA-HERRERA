@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo-pagina">Cargando... - Blog Matemático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            color: #222;
+            background-color: #8f76a4;
+        }
+        header {
+            border-bottom: 2px solid #1a5276;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .volver {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="volver">← Volver al índice</a>
+        <h1 id="titulo-entrada">Cargando título...</h1>
+        <small id="fecha-entrada"></small>
+    </header>
+
+    <main id="contenido-entrada">
+        <p>Cargando contenido...</p>
+    </main>
+
+    <script src="posts.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const postId = params.get('id');
+        const postInfo = publicaciones.find(p => p.id === postId);
+        const contenedor = document.getElementById('contenido-entrada');
+
+        if (postInfo) {
+            document.getElementById('titulo-pagina').textContent = postInfo.titulo + " - Blog Matemático";
+            document.getElementById('titulo-entrada').textContent = postInfo.titulo;
+            document.getElementById('fecha-entrada').textContent = "Publicado el: " + postInfo.fecha;
+
+            const script = document.createElement('script');
+            script.src = postInfo.archivo;
+            script.onload = () => { contenedor.innerHTML = contenidoEntrada; };
+            script.onerror = () => { contenedor.innerHTML = "<p>Error al cargar el contenido de la entrada.</p>"; };
+            document.body.appendChild(script);
+        } else {
+            contenedor.innerHTML = "<p>Entrada no encontrada.</p>";
+        }
+    </script>
+</body>
+</html>

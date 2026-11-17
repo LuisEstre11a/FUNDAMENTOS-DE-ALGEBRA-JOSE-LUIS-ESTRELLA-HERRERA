@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Matemático Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 10px;
+            color: #070707;
+            background-color: #441270;
+        }
+
+        h1 {
+            color: #1e6eca;
+            cursor: pointer;
+            border-bottom: 2px solid #1a5276;
+            padding-bottom: 5px;
+        }
+
+        .subtitulo {
+            font-size: 18px;
+            color: #2f70d1;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            background-color: #ab97c4;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        /* Lista de entradas cargadas dinámicamente */
+        #lista-entradas {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #lista-entradas li {
+            background-color: #cdcadb;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        #lista-entradas li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #lista-entradas a {
+            color: #1a5276;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        #lista-entradas a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .fecha-post {
+            display: inline-block;
+            font-size: 12px;
+            color: #7f8c8d;
+            margin-left: 8px;
+        }
+
+        .resumen-post {
+            margin: 8px 0 0 0;
+            background-color: transparent;
+            padding: 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        /* Clases auxiliares para elementos interactivos */
+        ul.interactivo {
+            background-color: #fafafa;
+            padding: 15px 30px;
+            border: 1px solid #ddd;
+        }
+
+        ul.interactivo li {
+            margin: 5px 0;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .oculto {
+            display: none;
+        }
+
+        .resaltado {
+            background-color: #d4efdf;
+            color: #196f3d;
+        }
+
+        .cambio-color {
+            color: #c0392b;
+        }
+
+        /* Tarjeta de herramientas */
+.herramienta {
+    display: block;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 12px;
+    color: #1a5276;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.herramienta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.herramienta strong {
+    display: block;
+    font-size: 18px;
+}
+
+.herramienta span {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo" onclick="cambiarColorTitulo()">Blog Matemático Interactivo</h1>
+
+    <h2 class="subtitulo">Entradas del Blog</h2>
+    
+    <!-- Aquí JavaScript inyectará las entradas desde posts.js -->
+    <ul id="lista-entradas"></ul>
+<h2 class="subtitulo">Herramientas</h2>
+
+<a class="herramienta" href="graficador.html">
+    <strong>Graficador de Matrices</strong>
+    <span>Convierte una matriz en imagen y aplícale operaciones matriciales.</span>
+</a>
+    <h2 class="subtitulo">Recursos y Conceptos Básicos</h2>
+
+    <p onclick="alternarLista('conceptos')" style="cursor: pointer;">
+        Conceptos Rápidos (Haz clic para mostrar u ocultar)
+    </p>
+
+    <ul id="conceptos" class="interactivo oculto">
+        <li onclick="resaltarElemento(this)">Álgebra: Manipulación de símbolos y ecuaciones.</li>
+        <li onclick="resaltarElemento(this)">Geometría: Estudio de las propiedades de figuras y espacios.</li>
+        <li onclick="resaltarElemento(this)">Cálculo: Análisis del cambio y del movimiento.</li>
+        <li onclick="resaltarElemento(this)">Estadística: Análisis y tratamiento de datos.</li>
+    </ul>
+
+    <!-- Archivo de configuración que contiene el arreglo de entradas -->
+    <script src="posts.js"></script>
+
+    <script>
+        // Cargar dinámicamente las entradas definidas en posts.js
+        const contenedorLista = document.getElementById('lista-entradas');
+
+        if (typeof publicaciones !== 'undefined' && publicaciones.length > 0) {
+            publicaciones.forEach(post => {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                    <a href="entrada.html?id=${post.id}">${post.titulo}</a>
+                    <span class="fecha-post">${post.fecha}</span>
+                    <p class="resumen-post">${post.resumen}</p>
+                `;
+                contenedorLista.appendChild(li);
+            });
+        } else {
+            contenedorLista.innerHTML = '<li>No hay entradas publicadas aún.</li>';
+        }
+
+        // Funciones de interacción rápida
+        function cambiarColorTitulo() {
+            var titulo = document.getElementById('titulo');
+            titulo.classList.toggle('cambio-color');
+        }
+
+        function alternarLista(id) {
+            var lista = document.getElementById(id);
+            lista.classList.toggle('oculto');
+        }
+
+        function resaltarElemento(elemento) {
+            elemento.classList.toggle('resaltado');
+        }
+    </script>
+</body>
+</html>

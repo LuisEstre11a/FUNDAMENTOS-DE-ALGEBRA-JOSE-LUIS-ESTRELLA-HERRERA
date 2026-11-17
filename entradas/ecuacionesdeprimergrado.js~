@@ -1,0 +1,292 @@
+contenidoEntrada = `
+
+<h2>Ecuaciones de primer grado</h2>
+
+<section>
+<h3>1. Procedimiento general para resolver cualquier ecuación de primer grado</h3>
+
+<p>Una ecuación de primer grado es una igualdad matemática que contiene una incógnita, generalmente representada por la letra x, cuyo exponente es 1. Resolverla consiste en encontrar el valor de la incógnita que hace verdadera la igualdad.</p>
+
+<p>Para resolver una ecuación de primer grado, se siguen estos pasos:</p>
+
+<p><strong>1. Eliminar los signos de agrupación:</strong> si existen paréntesis, se aplica la propiedad distributiva para eliminarlos.</p>
+
+<p><strong>2. Eliminar las fracciones:</strong> si hay fracciones, se puede multiplicar toda la ecuación por el mínimo común múltiplo de los denominadores.</p>
+
+<p><strong>3. Reducir términos semejantes:</strong> se suman o restan los términos que contienen la misma incógnita y los términos independientes.</p>
+
+<p><strong>4. Agrupar las incógnitas:</strong> se pasan los términos con incógnita a un lado de la igualdad y los números al otro, realizando la misma operación en ambos lados.</p>
+
+<p><strong>5. Despejar la incógnita:</strong> se divide entre el coeficiente que acompaña a la incógnita para encontrar su valor.</p>
+
+<p><strong>6. Comprobar el resultado:</strong> se sustituye la incógnita por el valor obtenido en la ecuación original para verificar que ambos lados sean iguales.</p>
+
+<p>El objetivo es mantener la igualdad durante todo el procedimiento hasta encontrar el valor de la incógnita.</p>
+</section>
+
+<section>
+<h3>2. Ejemplos resueltos y comprobados</h3>
+
+<h3>A) Ecuación entera</h3>
+
+<p>Las ecuaciones enteras son aquellas en las que la incógnita no aparece en el denominador de una fracción.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p>7x - 9 = 3x + 19</p>
+
+<p><strong>Paso 1. Agrupar las incógnitas.</strong></p>
+
+<p>Restamos 3x en ambos lados:</p>
+
+<p>7x - 3x - 9 = 19</p>
+
+<p>4x - 9 = 19</p>
+
+<p><strong>Paso 2. Pasar los números al otro lado.</strong></p>
+
+<p>Sumamos 9 en ambos lados:</p>
+
+<p>4x = 19 + 9</p>
+
+<p>4x = 28</p>
+
+<p><strong>Paso 3. Despejar la incógnita.</strong></p>
+
+<p>Dividimos entre 4:</p>
+
+<p>x = 28 / 4</p>
+
+<p><strong>Resultado: x = 7</strong></p>
+
+<p><strong>Comprobación:</strong></p>
+
+<p>Sustituimos x = 7 en la ecuación original:</p>
+
+<p>7(7) - 9 = 3(7) + 19</p>
+
+<p>49 - 9 = 21 + 19</p>
+
+<p>40 = 40</p>
+
+<p>Como ambos lados son iguales, la solución es correcta.</p>
+
+<h3>B) Ecuación fraccionaria</h3>
+
+<p>Las ecuaciones fraccionarias contienen fracciones. En este ejemplo, la incógnita aparece solamente en los numeradores.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p>x / 4 + x / 6 = 5</p>
+
+<p><strong>Paso 1. Encontrar el mínimo común múltiplo.</strong></p>
+
+<p>El mínimo común múltiplo de 4 y 6 es 12. Multiplicamos toda la ecuación por 12:</p>
+
+<p>12(x / 4) + 12(x / 6) = 12(5)</p>
+
+<p>3x + 2x = 60</p>
+
+<p><strong>Paso 2. Reducir términos semejantes.</strong></p>
+
+<p>5x = 60</p>
+
+<p><strong>Paso 3. Despejar la incógnita.</strong></p>
+
+<p>x = 60 / 5</p>
+
+<p><strong>Resultado: x = 12</strong></p>
+
+<p><strong>Comprobación:</strong></p>
+
+<p>Sustituimos x = 12 en la ecuación original:</p>
+
+<p>12 / 4 + 12 / 6 = 5</p>
+
+<p>3 + 2 = 5</p>
+
+<p>5 = 5</p>
+
+<p>La solución es correcta porque ambos lados son iguales.</p>
+
+<h3>C) Ecuación con signos de agrupación</h3>
+
+<p>Estas ecuaciones contienen paréntesis u otros signos de agrupación que deben eliminarse antes de despejar la incógnita.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p>3(2x - 5) + 4 = 2(x + 6)</p>
+
+<p><strong>Paso 1. Aplicar la propiedad distributiva.</strong></p>
+
+<p>Multiplicamos el número exterior por cada término dentro de los paréntesis:</p>
+
+<p>6x - 15 + 4 = 2x + 12</p>
+
+<p><strong>Paso 2. Reducir términos semejantes.</strong></p>
+
+<p>6x - 11 = 2x + 12</p>
+
+<p><strong>Paso 3. Agrupar las incógnitas.</strong></p>
+
+<p>Restamos 2x en ambos lados:</p>
+
+<p>4x - 11 = 12</p>
+
+<p><strong>Paso 4. Despejar la incógnita.</strong></p>
+
+<p>Sumamos 11 en ambos lados:</p>
+
+<p>4x = 23</p>
+
+<p>Dividimos entre 4:</p>
+
+<p><strong>Resultado: x = 23 / 4 = 5.75</strong></p>
+
+<p><strong>Comprobación:</strong></p>
+
+<p>Sustituimos x = 23 / 4 en la ecuación original:</p>
+
+<p>3(2(23 / 4) - 5) + 4 = 2(23 / 4 + 6)</p>
+
+<p>En el lado izquierdo:</p>
+
+<p>3(23 / 2 - 5) + 4 = 3(13 / 2) + 4</p>
+
+<p>39 / 2 + 8 / 2 = 47 / 2</p>
+
+<p>En el lado derecho:</p>
+
+<p>2(23 / 4 + 24 / 4) = 2(47 / 4) = 47 / 2</p>
+
+<p>Por lo tanto:</p>
+
+<p>47 / 2 = 47 / 2</p>
+
+<p>La solución es correcta.</p>
+
+<h3>D) Ecuación con literales</h3>
+
+<p>Las ecuaciones con literales contienen letras que representan cantidades conocidas o desconocidas. Generalmente, se despeja una letra en función de las demás.</p>
+
+<p><strong>Ejemplo:</strong></p>
+
+<p>Despejar x en la siguiente ecuación:</p>
+
+<p>3x + 2a = 5b - x</p>
+
+<p><strong>Paso 1. Agrupar los términos con x.</strong></p>
+
+<p>Sumamos x en ambos lados:</p>
+
+<p>3x + x + 2a = 5b</p>
+
+<p>4x + 2a = 5b</p>
+
+<p><strong>Paso 2. Pasar el término independiente al otro lado.</strong></p>
+
+<p>Restamos 2a en ambos lados:</p>
+
+<p>4x = 5b - 2a</p>
+
+<p><strong>Paso 3. Despejar x.</strong></p>
+
+<p>Dividimos entre 4:</p>
+
+<p><strong>Resultado: x = (5b - 2a) / 4</strong></p>
+
+<p><strong>Comprobación:</strong></p>
+
+<p>Sustituimos la expresión obtenida en la ecuación original:</p>
+
+<p>3((5b - 2a) / 4) + 2a = 5b - ((5b - 2a) / 4)</p>
+
+<p>En el lado izquierdo:</p>
+
+<p>(15b - 6a) / 4 + 8a / 4 = (15b + 2a) / 4</p>
+
+<p>En el lado derecho:</p>
+
+<p>20b / 4 - (5b - 2a) / 4 = (15b + 2a) / 4</p>
+
+<p>Por lo tanto:</p>
+
+<p>(15b + 2a) / 4 = (15b + 2a) / 4</p>
+
+<p>La igualdad se cumple, así que el despeje es correcto.</p>
+</section>
+
+<section>
+<h3>3. Problema de planteamiento propio relacionado con software</h3>
+
+<p><strong>Situación:</strong></p>
+
+<p>Un estudiante de Ingeniería en Software quiere comprar una memoria USB para guardar sus programas y proyectos escolares. Tiene ahorrados 80 pesos y decide guardar la misma cantidad de dinero durante 5 semanas. Al terminar ese periodo, tendrá 430 pesos. ¿Cuánto dinero debe ahorrar cada semana para alcanzar esa cantidad?</p>
+
+<h3>Paso 1. Incógnita</h3>
+
+<p>Representamos con x la cantidad de dinero que el estudiante debe ahorrar cada semana.</p>
+
+<p>x = dinero ahorrado cada semana.</p>
+
+<h3>Paso 2. Traducción</h3>
+
+<p>Identificamos los datos del problema:</p>
+
+<p>Ahorro inicial: 80 pesos.</p>
+
+<p>Número de semanas: 5.</p>
+
+<p>Ahorro semanal: x.</p>
+
+<p>Cantidad total deseada: 430 pesos.</p>
+
+<p>Como ahorra la misma cantidad durante 5 semanas, el ahorro acumulado será 5x.</p>
+
+<p>La expresión matemática es:</p>
+
+<p>80 + 5x = 430</p>
+
+<h3>Paso 3. Ecuación</h3>
+
+<p>La ecuación que representa el problema es:</p>
+
+<p>80 + 5x = 430</p>
+
+<p>Restamos 80 en ambos lados:</p>
+
+<p>5x = 430 - 80</p>
+
+<p>5x = 350</p>
+
+<p>Dividimos ambos lados entre 5:</p>
+
+<p>x = 350 / 5</p>
+
+<p><strong>Resultado: x = 70</strong></p>
+
+<h3>Paso 4. Solución</h3>
+
+<p>El estudiante debe ahorrar 70 pesos cada semana durante las 5 semanas para alcanzar los 430 pesos, considerando los 80 pesos que ya tenía ahorrados.</p>
+
+<h3>Paso 5. Validación contra el enunciado</h3>
+
+<p>Comprobamos que la cantidad obtenida cumple con las condiciones del problema.</p>
+
+<p>El estudiante comienza con 80 pesos y ahorra 70 pesos durante 5 semanas:</p>
+
+<p>80 + 5(70) = 430</p>
+
+<p>80 + 350 = 430</p>
+
+<p>430 = 430</p>
+
+<p>La igualdad se cumple. Por lo tanto, la solución es correcta y responde a la pregunta del problema.</p>
+</section>
+
+<section>
+<h3>Conclusión</h3>
+
+<p>Las ecuaciones de primer grado permiten encontrar valores desconocidos mediante operaciones matemáticas que mantienen la igualdad. Para resolverlas, es necesario simplificar las expresiones, agrupar los términos semejantes y despejar la incógnita. Además, comprobar los resultados permite verificar que la solución sea correcta. Estas ecuaciones también tienen aplicaciones prácticas, como calcular ahorros, administrar gastos y resolver problemas relacionados con la programación y la tecnología.</p>
+
+</section>`;

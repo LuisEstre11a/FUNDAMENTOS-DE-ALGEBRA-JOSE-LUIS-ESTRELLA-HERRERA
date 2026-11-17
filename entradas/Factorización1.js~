@@ -1,0 +1,108 @@
+contenidoEntrada = `
+<section>
+    <h2>Factorización I: tres casos principales</h2>
+
+    <p>La factorización consiste en transformar una suma o resta de términos algebraicos en una multiplicación de factores. Es el proceso inverso de desarrollar productos notables.</p>
+
+    <h2>1. Factor común</h2>
+
+    <h3>¿Cómo reconocerlo?</h3>
+    <p>Se utiliza cuando todos los términos de una expresión tienen un factor en común, que puede ser un número, una letra o ambos. Se busca el máximo factor común que divide a todos los términos.</p>
+
+    <h3>Procedimiento</h3>
+    <p>Primero, identifico qué número y qué letras se repiten en todos los términos. Después, tomo el menor exponente de cada letra común y divido cada término entre ese factor. Finalmente, escribo el factor común afuera de un paréntesis y los resultados de las divisiones adentro.</p>
+
+    <h3>Ejemplo resuelto</h3>
+    <p><strong>Factorizar:</strong> 18x³ + 12x²</p>
+
+    <p><strong>Paso 1.</strong> Encontrar el factor común.</p>
+    <p>El máximo común divisor de 18 y 12 es 6. Ambos términos tienen x² como potencia común de menor exponente. Por lo tanto, el factor común es 6x².</p>
+
+    <p><strong>Paso 2.</strong> Dividir cada término entre el factor común.</p>
+    <p>18x³ ÷ 6x² = 3x</p>
+    <p>12x² ÷ 6x² = 2</p>
+
+    <p><strong>Resultado:</strong> 6x²(3x + 2)</p>
+
+    <h3>Comprobación multiplicando de regreso</h3>
+    <p>6x²(3x + 2) = 6x²(3x) + 6x²(2)</p>
+    <p>= 18x³ + 12x²</p>
+    <p>Se obtiene la expresión original, por lo tanto, la factorización es correcta.</p>
+
+    <h2>2. Trinomio cuadrado perfecto</h2>
+
+    <h3>¿Cómo reconocerlo?</h3>
+    <p>Es una expresión formada por tres términos. El primero y el último deben ser cuadrados perfectos, y el término de en medio debe ser el doble del producto de sus raíces cuadradas.</p>
+
+    <p><strong>Forma con suma:</strong> a² + 2ab + b² = (a + b)²</p>
+    <p><strong>Forma con resta:</strong> a² - 2ab + b² = (a - b)²</p>
+
+    <h3>Procedimiento</h3>
+    <p>Primero, saco la raíz cuadrada del primer y del tercer término. Después, multiplico esas raíces entre sí y por 2. Si el resultado coincide con el término de en medio, tengo un trinomio cuadrado perfecto. Finalmente, escribo las raíces dentro de un paréntesis y elevo ese binomio al cuadrado, respetando el signo del término central.</p>
+
+    <h3>Ejemplo resuelto</h3>
+    <p><strong>Factorizar:</strong> 9y² + 24y + 16</p>
+
+    <p><strong>Paso 1.</strong> Sacar las raíces cuadradas del primero y del tercer término.</p>
+    <p>√(9y²) = 3y</p>
+    <p>√16 = 4</p>
+
+    <p><strong>Paso 2.</strong> Comprobar el término central.</p>
+    <p>2(3y)(4) = 24y</p>
+    <p>El resultado coincide con el término central, así que es un trinomio cuadrado perfecto.</p>
+
+    <p><strong>Resultado:</strong> (3y + 4)²</p>
+
+    <h3>Comprobación multiplicando de regreso</h3>
+    <p>(3y + 4)(3y + 4) = 9y² + 12y + 12y + 16</p>
+    <p>= 9y² + 24y + 16</p>
+    <p>Se obtiene la expresión original, por lo tanto, la factorización es correcta.</p>
+
+    <h2>3. Diferencia de cuadrados</h2>
+
+    <h3>¿Cómo reconocerla?</h3>
+    <p>Se presenta cuando hay dos términos separados por una resta y ambos son cuadrados perfectos. Una suma de cuadrados no se factoriza de esta misma manera en los números reales.</p>
+
+    <p><strong>Forma general:</strong> a² - b² = (a - b)(a + b)</p>
+
+    <h3>Procedimiento</h3>
+    <p>Primero, verifico que los dos términos sean cuadrados perfectos. Después, saco la raíz cuadrada de cada uno. Finalmente, escribo dos paréntesis: en ambos coloco las raíces, pero en uno uso el signo menos y en el otro el signo más.</p>
+
+    <h3>Ejemplo resuelto</h3>
+    <p><strong>Factorizar:</strong> 49m² - 121</p>
+
+    <p><strong>Paso 1.</strong> Sacar las raíces cuadradas.</p>
+    <p>√(49m²) = 7m</p>
+    <p>√121 = 11</p>
+
+    <p>Los dos términos son cuadrados perfectos y están separados por una resta.</p>
+
+    <p><strong>Resultado:</strong> (7m - 11)(7m + 11)</p>
+
+    <h3>Comprobación multiplicando de regreso</h3>
+    <p>(7m - 11)(7m + 11) = 49m² + 77m - 77m - 121</p>
+    <p>Los términos del medio se cancelan.</p>
+    <p>= 49m² - 121</p>
+    <p>Se obtiene la expresión original, por lo tanto, la factorización es correcta.</p>
+
+    <h2>Ida y regreso</h2>
+
+    <p>La factorización y los productos notables son procesos inversos: uno transforma una multiplicación en una suma o resta, y el otro hace lo contrario.</p>
+
+    <h3>1. Factor común</h3>
+    <p><strong>Ida (producto notable):</strong> a(b + c) = ab + ac</p>
+    <p><strong>Regreso (factorización):</strong> ab + ac = a(b + c)</p>
+
+    <h3>2. Trinomio cuadrado perfecto</h3>
+    <p><strong>Ida (producto notable):</strong> (a + b)² = a² + 2ab + b²</p>
+    <p><strong>Regreso (factorización):</strong> a² + 2ab + b² = (a + b)²</p>
+
+    <h3>3. Diferencia de cuadrados</h3>
+    <p><strong>Ida (producto notable):</strong> (a - b)(a + b) = a² - b²</p>
+    <p><strong>Regreso (factorización):</strong> a² - b² = (a - b)(a + b)</p>
+
+    <h2>Conclusión</h2>
+    <p>Aprendí que para factorizar debo observar la estructura de la expresión y reconocer qué caso corresponde. El factor común consiste en extraer los elementos que se repiten; el trinomio cuadrado perfecto se identifica mediante las raíces de sus extremos y el doble producto; y la diferencia de cuadrados se resuelve mediante dos binomios conjugados.</p>
+
+    <p>La comprobación multiplicando de regreso permite verificar que el resultado sea correcto y demuestra que la factorización es el proceso inverso de desarrollar los productos notables.</p>
+</section>`;
