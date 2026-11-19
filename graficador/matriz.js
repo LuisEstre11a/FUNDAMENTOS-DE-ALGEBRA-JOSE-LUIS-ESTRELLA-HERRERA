@@ -65,14 +65,15 @@ function pendiente(nombre, workshop) {
  */
 function sumar(A, B) {
   // TODO Workshop 1
- //pendiente('sumar', 'Workshop 1');
+  //pendiente('sumar', 'Workshop 1');
   if (!mismoOrden(A, B)) {
-    throw new Error('Para sumar, A y B deben tener el mismo orden.');
+    throw new error('Para sumar, A y B deben tener el mismo orden.')
   }
-  const [m, n] = orden(A);
+  const [m, n] = orden(A); //regresa lista de la fila y la columna
   const R = crearMatriz(m, n);
-  for (let i = 0; i < m; i++) { //vamos desde fila 0 hasta la fila "m"
-    for (let j = 0; j < n; j++) { //vamos desde columna "0" hasta la columna "n"
+  // sumar componente a componente
+  for(let i = 0; i < m; i++){ //vamos desde fila "0". hasta la fila "m"
+    for (let j = 0; j < n; j++){ // vamos desde la columna "0". hasta la columna "n"
       R[i][j] = A[i][j] + B[i][j];
     }
   }
@@ -86,18 +87,21 @@ function sumar(A, B) {
 function restar(A, B) {
   // TODO Workshop 1
   //pendiente('restar', 'Workshop 1');
-   if (!mismoOrden(A, B)) {
-    throw new Error('Para sumar, A y B deben tener el mismo orden.');
+  if (!mismoOrden(A, B)) {
+    throw new error('Para sumar, A y B deben tener el mismo orden.')
   }
-  const [m, n] = orden(A);
+  const [m, n] = orden(A); //regresa lista de la fila y la columna
   const R = crearMatriz(m, n);
-  for (let i = 0; i < m; i++) { //vamos desde fila 0 hasta la fila "m"
-    for (let j = 0; j < n; j++) { //vamos desde columna "0" hasta la columna "n"
+  // sumar componente a componente
+  for(let i = 0; i < m; i++){ //vamos desde fila "0". hasta la fila "m"
+    for (let j = 0; j < n; j++){ // vamos desde la columna "0". hasta la columna "n"
       R[i][j] = A[i][j] - B[i][j];
     }
   }
   return R;
 }
+
+
 
 /**
  * Multiplicación escalar k · A: multiplica CADA elemento por k.
@@ -105,7 +109,17 @@ function restar(A, B) {
  */
 function escalar(k, A) {
   // TODO Workshop 1
-  pendiente('escalar', 'Workshop 1');
+  // pendiente('escalar', 'Workshop 1');
+  //obtener filas y columnas de la matriz
+  const [filas, columnas] = orden(A); 
+  const R = crearMatriz(filas, columnas);
+  //Algoritmo para multiplicar elemneto a elemento
+  for (let f = 0; f < filas; f++){
+    for (let c = 0; c < columnas; c++){
+      R[f][c] = k * A[f][c];
+    }
+  }
+  return R;
 }
 
 /**
@@ -116,7 +130,15 @@ function escalar(k, A) {
  */
 function transpuesta(A) {
   // TODO Workshop 1
-  pendiente('transpuesta', 'Workshop 1');
+  //pendiente('transpuesta', 'Workshop 1');
+  const [filas, columnas] = orden(A); 
+  const R = crearMatriz(columnas, filas);
+  for(let f = 0; f < filas; f++){
+    for(let c = 0; c < columnas; c++){
+      R[c][f] = A[f][c];
+    }
+  }
+  return R;
 }
 
 
@@ -128,7 +150,15 @@ function transpuesta(A) {
 /** Determinante de una matriz 2 × 2:  ad − bc */
 function det2(T) {
   // TODO Workshop 2
-  pendiente('det2', 'Workshop 2');
+  //pendiente('det2', 'Workshop 2');
+  var determinante = 0;
+  const a = T[0][0];
+  const b = T[0][1];
+  const c = T[1][0];
+  const d = T[1][1];
+  //
+  determinante = a * d - b * c;
+  return determinante;
 }
 
 /**
@@ -140,6 +170,31 @@ function transformar(x, y, T) {
   pendiente('transformar', 'Workshop 2');
 }
 
+/**
+* Determinante de una matriz cuadrada de cualquier tamaño, por COFACTORES.
+* Regresa un NÚMERO, no una matriz.
+*
+* Si A no es cuadrada:
+*     throw new Error('El determinante solo existe para matrices cuadradas.');
+*
+* Pista: es recursiva.
+*   - Si A es 2 × 2, regresa det2(A).
+*   - Si no, recorre el renglón 0: para cada columna j, arma el MENOR
+*     (A sin el renglón 0 y sin la columna j) y suma
+*         (−1)^j · A[0][j] · determinante(menor)
+*/
+function determinante(A) {
+  // TODO Workshop 2
+  //pendiente('determinante', 'Workshop 2');
+  const [filas, columnas] = orden(A);
+  var determinante = 0;
+  if (filas == 2) {
+    determinante = det2(A);
+    return determinante;
+  } else {
+    pendiente('determinante', 'Workshop 2');
+  }
+}
 
 // =============================================================
 //  WORKSHOP 3 — Sistemas de ecuaciones I         Actividad #33
